@@ -7,7 +7,7 @@ public record Order(String orderId, List<Product> products, String customerEmail
         double sum = 0;
         // TODO (1a): วนลูป products แล้วบวก p.price() เข้า sum
         //   hint: for (Product p : products) sum += p.price();
-        /* ====== fill in here ====== */
+        for (Product p : products) sum += p.price();
         return sum;
     }
 }
